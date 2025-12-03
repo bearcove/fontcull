@@ -8,6 +8,21 @@ Font subsetting library. Subset fonts to only include glyphs that are actually u
 - **Multiple formats** - Supports TTF, OTF, and WOFF2 input
 - **WOFF2 output** - Compress subsetted fonts to WOFF2 for web delivery
 - **Static analysis** (optional) - Parse HTML/CSS to detect font usage
+- **Optional WOFF2** - Disable for pure Rust builds without C++ dependency
+
+## Feature flags
+
+| Feature | Default | Description |
+|---------|---------|-------------|
+| `woff2` | Yes | WOFF2 compression/decompression (requires C++) |
+| `static-analysis` | No | HTML/CSS parsing for font usage detection |
+
+For a pure Rust build without WOFF2 support:
+
+```toml
+[dependencies]
+fontcull = { version = "2", default-features = false }
+```
 
 ## Usage
 
@@ -73,14 +88,14 @@ if let Some(chars) = analysis.chars_per_font.get("MyFont") {
 ### Core functions
 
 - `subset_font_data(font_data, chars)` - Subset font to TTF bytes
+- `subset_font_data_unicode(font_data, unicodes)` - Subset using `u32` codepoints
+
+### WOFF2 functions (requires `woff2` feature)
+
 - `subset_font_to_woff2(font_data, chars)` - Subset and compress to WOFF2
+- `subset_font_to_woff2_unicode(font_data, unicodes)` - Subset to WOFF2 using codepoints
 - `decompress_font(font_data)` - Decompress WOFF2 to TTF/OTF
 - `compress_to_woff2(font_data)` - Compress TTF/OTF to WOFF2
-
-### Unicode codepoint variants
-
-- `subset_font_data_unicode(font_data, unicodes)` - Subset using `u32` codepoints
-- `subset_font_to_woff2_unicode(font_data, unicodes)` - Subset to WOFF2 using codepoints
 
 ### Format detection
 
