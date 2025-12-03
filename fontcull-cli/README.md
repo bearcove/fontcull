@@ -60,7 +60,7 @@ fontcull https://example.com --whitelist "0123456789" --subset fonts/body.ttf
 | `--subset <PATTERN>` | `-s` | Font files to subset (glob patterns supported) |
 | `--output <DIR>` | `-o` | Output directory for subset fonts |
 | `--family <NAMES>` | `-f` | Only include glyphs from these font families (comma-separated) |
-| `--spider-limit <N>` | | Maximum pages to crawl (0 = no limit) |
+| `--spider-limit <N>` | | Maximum pages to crawl (0 = disabled) |
 | `--whitelist <CHARS>` | `-w` | Characters to always include |
 
 ## Output

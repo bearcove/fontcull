@@ -5,7 +5,7 @@ Font subsetting library. Subset fonts to only include glyphs that are actually u
 ## Features
 
 - **No Python** - No fonttools/pyftsubset dependency, just Rust + C++ for WOFF2
-- **Multiple formats** - Supports TTF, OTF, WOFF, and WOFF2 input
+- **Multiple formats** - Supports TTF, OTF, and WOFF2 input
 - **WOFF2 output** - Compress subsetted fonts to WOFF2 for web delivery
 - **Static analysis** (optional) - Parse HTML/CSS to detect font usage
 
