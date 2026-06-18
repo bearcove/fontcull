@@ -1,5 +1,11 @@
 # fontcull
 
+## Moved to Dodeca
+
+This project has been absorbed into [Dodeca](https://github.com/bearcove/dodeca).
+Future development happens in Dodeca's `libs/fontcull` tree; this repository is
+kept for history and crate metadata.
+
 [![Crates.io](https://img.shields.io/crates/v/fontcull.svg)](https://crates.io/crates/fontcull)
 [![Documentation](https://docs.rs/fontcull/badge.svg)](https://docs.rs/fontcull)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
