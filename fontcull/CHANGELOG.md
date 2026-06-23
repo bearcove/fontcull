@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.2](https://github.com/bearcove/fontcull/compare/fontcull-v2.0.1...fontcull-v2.0.2) - 2026-02-02
+
+### Other
+
+- Make README examples compile-checked by CI
+
 ## [2.0.1](https://github.com/bearcove/fontcull/compare/fontcull-v2.0.0...fontcull-v2.0.1) - 2026-01-23
 
 ### Other
